@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_join"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    <TableLayout
+        android:layout_marginTop = "40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TableRow
+            android:layout_marginBottom="60dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/user" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/et_inputID"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:hint="아이디를 입력해주세요"
+                android:maxLines="1" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+
+            <EditText
+                android:id="@+id/et_inputPwd"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="30dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/et_pwdCheck"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:hint="비밀번호 확인"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textCursorDrawable="@null" />
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnOk"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/colorSky"
+        android:onClick="join"
+        android:text="확인"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

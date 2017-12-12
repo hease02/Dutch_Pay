@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dutch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jh.dutch.DutchActivity"
+    android:weightSum="1"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/coins"/>
+
+                <EditText
+                    android:id="@+id/et_money"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:hint="금액을 입력해주세요."/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/calendar"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:id="@+id/tv_date"
+                    android:onClick="dateClick"
+                    android:text="날짜 입력해주세요."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/team"/>
+
+                <EditText
+                    android:id="@+id/et_find"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content"
+                    android:hint="빌린 사람의 아이디" />
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="searchMember"
+                    android:text="확인"/>
+            </LinearLayout>
+
+            <ListView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:divider="#00000000"
+                android:dividerHeight="1dp"
+                android:id="@+id/listView"
+                android:layout_weight="0.11" />
+
+            <TableLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:text="은행"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:text="계좌번호"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+                    <Button
+                        android:layout_height="38dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border"
+                        android:onClick="onBank"
+                        android:id="@+id/btn_Bank"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/white"
+                        android:text="선택"/>
+
+                    <EditText
+                        android:id="@+id/et_account"
+                        android:textColorHint="@android:color/white"
+                        android:textColor="@color/colorGrayDeep"
+                        android:textCursorDrawable="@null"
+                        android:layout_height="38dp"
+                        android:cursorVisible="false"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:background="@drawable/border"
+                        android:hint="계좌 번호 (- 없이 입력)"
+                        android:inputType="number"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorSky"
+        android:onClick="DutchComplete"
+        android:text="확인"/>
+
+</LinearLayout>

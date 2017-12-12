@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeMain" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/colorPink</item>
+        <item name="colorPrimary">@color/colorSky</item>
+        <item name="colorPrimaryDark">@color/colorBlue</item>
+
+    </style>
+
+    <style name="AppThemeJoin" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorSky</item>
+        <item name="colorPrimaryDark">@color/colorBlue</item>
+        <item name="colorAccent">@color/colorPink</item>
+    </style>
+
+    <style name="AppThemeDutch" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorSky</item>
+        <item name="colorPrimaryDark">@color/colorBlue</item>
+        <item name="colorAccent">@color/colorPink</item>
+    </style>
+
+
+    <style name = "NoTitle"   parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name = "android:windowFullscreen">true</item>
+        <item name = "windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeList" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/colorSky</item>
+        <item name="colorPrimaryDark">@color/colorBlue</item>
+        <item name="colorAccent">@color/colorPink</item>
+
+    </style>
+
+    <style name = "MyActionBar" parent = "@style/Widget.AppCompat.ActionBar">
+        <item name = "titleTextStyle">@style/MyActionBar.MyActionBarTitleText</item>
+    </style>
+
+    <style name= "MyActionBar.MyActionBarTitleText" parent ="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name = "android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="AppThemeState" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name = "actionBarStyle">@style/MyActionBar</item>
+        <item name ="colorPrimary">@android:color/white</item>
+        <item name ="colorPrimaryDark">@color/colorGray</item>
+        <item name ="colorControlNormal">@color/colorYellow</item>
+        <item name ="colorAccent">@color/colorYellow</item>
+    </style>
+
+
+    <style name="MyEditTextTheme">
+        <item name="colorControlNormal">@color/colorGray</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_state"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jh.dutch.StateActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlue"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="신용도"/>
+
+    <RatingBar
+        android:id="@+id/user_rate"
+        style="@style/Widget.AppCompat.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.01" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlue"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="빌린 돈"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:text="Money"
+            android:id="@+id/tv_rent" />
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="자세히"
+            android:id="@+id/btnRent"
+            android:onClick="myRent"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlue"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="빌려준 돈"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:text="Money"
+            android:id="@+id/tv_loan" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자세히"
+            android:id="@+id/btnLoan"
+            android:onClick="myLoan"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="80dp"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorSky"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/color3"
+        android:text="더치페이 하기"
+        android:id="@+id/btnDutch"
+        android:onClick="myDutch"/>
+
+</LinearLayout>

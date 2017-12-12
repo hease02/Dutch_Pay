@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:textColor="@color/colorBlue"
+                android:textSize="15dp"
+                android:id="@+id/bank1"
+                android:text="NH농협"
+                android:onClick="myBank"
+                android:layout_marginRight="45dp" />
+
+            <TextView
+                android:textColor="@color/colorBlue"
+                android:textSize="15dp"
+                android:id="@+id/bank2"
+                android:text="KB국민"
+                android:onClick="myBank"
+                android:layout_marginRight="45dp" />
+            <TextView
+                android:textColor="@color/colorBlue"
+                android:textSize="15dp"
+                android:id="@+id/bank3"
+                android:text="신한"
+                android:onClick="myBank" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:textColor="@color/colorBlue"
+                android:textSize="15dp"
+                android:id="@+id/bank4"
+                android:text="전북"
+                android:onClick="myBank"
+                android:layout_marginRight="45dp" />
+
+            <TextView
+                android:textColor="@color/colorBlue"
+                android:textSize="15dp"
+                android:id="@+id/bank5"
+                android:text="IBK기업"
+                android:onClick="myBank"
+                android:layout_marginRight="45dp" />
+            <TextView
+                android:textColor="@color/colorBlue"
+                android:textSize="15dp"
+                android:id="@+id/bank6"
+                android:text="우체국"
+                android:onClick="myBank" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:textColor="@color/colorBlue"
+                android:textSize="15dp"
+                android:id="@+id/bank7"
+                android:text="대구"
+                android:onClick="myBank"
+                android:layout_marginRight="45dp" />
+            <TextView
+                android:textColor="@color/colorBlue"
+                android:textSize="15dp"
+                android:id="@+id/bank8"
+                android:text="우리"
+                android:onClick="myBank"
+                android:layout_marginRight="45dp" />
+            <TextView
+                android:textColor="@color/colorBlue"
+                android:textSize="15dp"
+                android:id="@+id/bank9"
+                android:text="하나"
+                android:onClick="myBank"
+                android:layout_marginRight="20dp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
